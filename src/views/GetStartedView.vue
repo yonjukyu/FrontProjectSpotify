@@ -12,7 +12,7 @@
       </h2>
     </div>
     <div>
-      <button class="grosBoutonVert" @click="$router.push('/')" > Get Started </button>
+      <BoutonVertComponenet message="Getting Started" route='/'> Getting Started </BoutonVertComponenet>
     </div>
 
   </div>
@@ -47,14 +47,17 @@ h2 {
   margin-left: 30px;
 }
 
-.grosBoutonVert{
-  width: 80%;
-  height: 100px;
-  color: white;
-  font-size: 25px;
-  background-color: rgb(66, 200, 60);
-  border: none;
-  border-radius: 15px;
-  margin-top: 20px;
-}
+
 </style>
+
+<script>
+import BoutonVertComponenet from "@/components/BoutonVertComponenet";
+export default {
+  components: {BoutonVertComponenet},
+  data: function (){
+    return{
+      text: "Getting Started"
+    }
+  }
+}
+</script>
