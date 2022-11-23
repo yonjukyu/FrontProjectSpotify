@@ -58,4 +58,3 @@ h2 {
   margin-top: 20px;
 }
 </style>
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(wp10524201-ariana-grande-2022-wallpapers.jpg);
