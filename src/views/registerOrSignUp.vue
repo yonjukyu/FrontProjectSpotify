@@ -5,25 +5,26 @@
     </div>
     <div class="BoutonAndSign">
       <p class="enjoyAgain">Enjoy Listening To Music</p>
-      <button class="BoutonVert" @click="$router.push('/')" > Register </button>
-      <k1 class="signIn"> Sign in</k1>
+      <button class="BoutonVert" @click="$router.push('/signIn')" > Register </button>
+      <router-link class="signIn" to="/signIn"> Sign in</router-link>
     </div>
     
     <img class="Billie" src="../assets/billiecoté.png">
   </div>
 </template>
 
-<style>
+<style scoped>
 .enjoyAgain{
   color: white;
   font-size: 30px;
 }
 .signIn{
+  text-decoration: none;
   color: white;
   font-size: 40px;
 }
 .BoutonAndSign{
-  margin-top: 50%;
+  margin-top: 70%;
 }
 .BoutonVert{
   width: 40%;
@@ -34,7 +35,7 @@
   border: none;
   border-radius: 15px;
   margin-top: 20px;
-  margin-right: 20%;
+  margin-right: 15%;
 }
 .registerOrSignUp{
   width: 390px;
@@ -49,23 +50,8 @@
   margin-top: 100px;
 }
 .Billie{
-  width: 60%;
-  margin-left: -40% ;
+  width: 70%;
+  margin-left: -30% ;
+  margin-top: 10%;
 }
 </style>
-
-<script>
-export default {
-  components: {},
-  data: function(){
-  },
-  methods: {
-    toggleClass: function(){
-
-      this.isActive = !this.isActive;
-
-    }
-  }
-}
-
-</script>

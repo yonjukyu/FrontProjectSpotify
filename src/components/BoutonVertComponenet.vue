@@ -1,7 +1,7 @@
 <template>
   <div>
-    <button class="grosBoutonVert" @click="$router.push('/')" > {{message}} </button>
-  </div>
+    <router-link class="grosBoutonVert"  :to="route"> {{message}} </router-link>
+  </div>'
 </template>
 
 <style>
@@ -9,11 +9,11 @@
   width: 80%;
   height: 100px;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   background-color: rgb(66, 200, 60);
-  border: none;
-  border-radius: 15px;
-  margin-top: 20px;
+  padding: 5% 25%;
+  border-radius: 25px;
+  text-decoration: none;
 }
 </style>
 

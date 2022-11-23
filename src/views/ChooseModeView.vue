@@ -11,19 +11,21 @@
       <img class="lightMode" src="../assets/light-mode.png">
     </div>
 
-    <div>
+    <div class="textLightDark">
       <k1 class="darkModeText">Dark Mode</k1>
       <k1 class="lightModeText"> Light Mode</k1>
     </div>
     <div>
-      <BoutonVertComponenet message="Continue" route='/'> Continue </BoutonVertComponenet>
+      <BoutonVertComponenet class="button" message="Continue" route='/registerOrSignUp'> Continue </BoutonVertComponenet>
     </div>
 
   </div>
 </template>
 
-<style>
-
+<style scoped>
+.textLightDark{
+  padding-bottom: 50px;
+}
 .darkModeText{
   margin-right: 20%;
   color: white;

@@ -12,13 +12,13 @@
       </h2>
     </div>
     <div>
-      <BoutonVertComponenet message="Getting Started" route='/'> Getting Started </BoutonVertComponenet>
+      <BoutonVertComponenet message="Getting Started" route='/chooseMode'></BoutonVertComponenet>
     </div>
 
   </div>
 </template>
 
-<style>
+<style scoped>
 
 .getStarted{
   width: 390px;
@@ -45,6 +45,7 @@ h2 {
   text-align: center;
   margin-right: 30px;
   margin-left: 30px;
+  margin-bottom: 20%;
 }
 
 
@@ -54,10 +55,5 @@ h2 {
 import BoutonVertComponenet from "@/components/BoutonVertComponenet";
 export default {
   components: {BoutonVertComponenet},
-  data: function (){
-    return{
-      text: "Getting Started"
-    }
-  }
 }
 </script>
